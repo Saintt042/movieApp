@@ -8,7 +8,10 @@ const Home = () => {
   const [text, setText] = useState("batman");
   const [dataArr, setDataArr] = useState([]);
   useEffect(() => {
-    const apikey = "c9479a99"
+    // const apikey = "c9479a99"
+
+    const apikey = process.env.REACT_APP_API_KEY
+    
     const fetchMovies = async () => {
       const res = await fetch(
         `http://www.omdbapi.com/?s=${text}&apikey=${apikey}`
