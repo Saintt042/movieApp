@@ -6,20 +6,21 @@ import Search from "../Search/Search";
 
 const Home = () => {
   const [text, setText] = useState("batman");
+
   const [dataArr, setDataArr] = useState([]);
   useEffect(() => {
     // const apikey = "c9479a99"
 
     const apikey = process.env.REACT_APP_API_KEY
     
-    const fetchMovies = async () => {
+    const fetchMoviesOne = async () => {
       const res = await fetch(
-        `https://www.omdbapi.com/?s=${text}&apikey=${apikey}`
+        `https://www.omdbapi.com/?s=${text}&apikey=${apikey} &type=movie`
       );
       const data = await res.json();
       setDataArr(data);
     };
-    fetchMovies();
+    fetchMoviesOne();
   }, [text]);
   const search = (data) => {
     setText(data);

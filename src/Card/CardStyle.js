@@ -6,7 +6,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: flex-start;
     padding: 0px;
     gap: 13px;
@@ -45,7 +45,7 @@ color: #000000;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: space-between;
+// justify-content: space-between;
 align-items: flex-start;
 padding: 0px;
 gap: 13px;
