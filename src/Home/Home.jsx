@@ -14,7 +14,7 @@ const Home = () => {
     
     const fetchMovies = async () => {
       const res = await fetch(
-        `http://www.omdbapi.com/?s=${text}&apikey=${apikey}`
+        `https://www.omdbapi.com/?s=${text}&apikey=${apikey}`
       );
       const data = await res.json();
       setDataArr(data);
