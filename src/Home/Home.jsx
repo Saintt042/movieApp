@@ -8,9 +8,10 @@ const Home = () => {
   const [text, setText] = useState("batman");
   const [dataArr, setDataArr] = useState([]);
   useEffect(() => {
+    const apikey = "c9479a99"
     const fetchMovies = async () => {
       const res = await fetch(
-        `http://www.omdbapi.com/?s=${text}&apikey=c9479a99`
+        `http://www.omdbapi.com/?s=${text}&apikey=${apikey}`
       );
       const data = await res.json();
       setDataArr(data);
