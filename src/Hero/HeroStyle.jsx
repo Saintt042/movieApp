@@ -23,5 +23,6 @@ color: #FFFFFF;
   @media screen and (max-width: 815px) {
     h1 {
         left: 20px;
+        font-size: 68px;
     }
 `;

@@ -1,31 +1,28 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-
 form {
-    padding: 0px;
+padding: 0px;
 position: absolute;
 left: 77px;
 top: 751px;
-    display: flex;
+display: flex;
 flex-direction: column;
 gap: 4px;
 align-items: flex-start;
-
 }
-button {
-    font-weight: 400;
+
+h1{
+font-weight: 400;
 font-size: 24px;
-line-height: 31px;
 width: 77px;
 height: 31px;
 color: #000000;
-
 }
 
 input {
-    width: 850px;
-    max-width: 1050px;
+width: 1306px;
+max-width: 1050px;
 height: 54px;
 border: 1px solid #000000;
 padding: 10px;

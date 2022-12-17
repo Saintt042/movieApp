@@ -16,7 +16,7 @@ const Search = ({ search }) => {
     <Container>
       <div className="searchS">
         <form onSubmit={handleSubmit}>
-          <button>Search</button>
+          <h1>Search</h1>
           <input type="text" value={text} onChange={handleChange} />
           
         </form>
