@@ -35,12 +35,12 @@ background: #E5E5E5;
     left: 20px;
     }
     input {
-        width: 350px;
+        width: 300px;
     }
 
     @media screen and (max-width: 475px){
         input {
-            width:350px;
+            width:335px;
         }
     }
 `;
