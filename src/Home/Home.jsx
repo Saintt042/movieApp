@@ -13,14 +13,14 @@ const Home = () => {
 
     const apikey = process.env.REACT_APP_API_KEY
     
-    const fetchMoviesOne = async () => {
+    const fetchMovies = async () => {
       const res = await fetch(
-        `https://www.omdbapi.com/?s=${text}&apikey=${apikey} &type=movie`
+        `https://www.omdbapi.com/?s=${text}&apikey=${apikey}`
       );
       const data = await res.json();
       setDataArr(data);
     };
-    fetchMoviesOne();
+    fetchMovies();
   }, [text]);
   const search = (data) => {
     setText(data);
